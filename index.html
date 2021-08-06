@@ -1,0 +1,1651 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+		<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: coral;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#Login{
+	font-weight: bold;
+	box-shadow: black 10px 10px 10px;
+	width: 90px;
+	padding: 5px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.bgimg-1 {
+  background-image: url("img/img14.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img/img13.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img/img11.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.md-pills .nav-link.active {
+		  color: #fff;
+		  background-color: #616161;
+		}
+		button.close {
+		  position: absolute;
+		  right: 0;
+		  z-index: 2;
+		  padding-right: 1rem;
+		  padding-top: .6rem;
+		}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+
+
+html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+
+  @media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+      height: 100vh;
+    }
+  }
+
+  .top-nav-collapse {
+    background-color: #78909c !important;
+  }
+
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+  @media (max-width: 991px) {
+   .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+   }
+  }
+  
+  h1 {
+    letter-spacing: 8px;
+  }
+
+  h5 {
+    letter-spacing: 3px;
+  }
+
+  .hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+  }
+#PANIER{
+	background-color: rgba(49, 194, 247, 0.87);color: rgb(255, 255, 255); margin-right: 50px;
+	padding: 2px; border-radius: 5px;
+}
+
+.map-container-section {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-section iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+</style>
+</head>
+<body>
+
+
+<!-- Main navigation -->
+<header>
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+	  <div class="container">
+		<a class="navbar-brand" href="#"><strong style="color: red;font-weight: bold;"></strong></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+		  aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html" style="border-bottom: solid 2px rgb(37, 153, 203);">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#magasin" >&nbspMagasin</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="l'histoire du velo.html" >&nbspHistorique Vélo</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact" >&nbspContact</a>
+			  </li>
+		  </ul>
+		  <form class="form-inline" style="display: flex;justify-content: space-around; align-items: center; width: 400px;">
+			<div class="md-form my-0" >
+			  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+			</div>
+			<div style="display: flex;justify-content: space-around; align-items: center; width: 600px;">
+				<a href="login.html">
+					
+					<button  type="button" id="Login" class="btn btn-outline-info btn-rounded waves-effect" style="font-size: 15px;padding-right: 9px;width: 100px;"><i class=""
+						aria-hidden="true" ></i>Connexion &nbsp</button>
+						
+				</a>
+				<button type="button" class="btn btn-outline-info" style="width: 100px; height: 40px;padding:9px ;">    <p id="demo" style="color: white;"></p></button>
+			<div>
+			
+        
+			</div>
+			</div>
+		   
+		  </form>
+		</div>
+	  </div>
+	</nav>
+	<!-- Navbar -->
+	<!-- Full Page Intro -->
+	<div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('img/img10.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+	  <!-- Mask & flexbox options-->
+	  <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+		<!-- Content -->
+		<div class="container">
+		  <!--Grid row-->
+		  <div class="row">
+			<!--Grid column-->
+			<div class="col-md-12 mb-4 white-text text-center">
+			  <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+				data-wow-delay="0.3s"><strong>Bienvenue !</strong></h1>
+			  <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+			  <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>EN 3 ÉTAPES SIMPLES, VOUS ALLEZ SAVOIR LE MODÈLE EXACT DU VÉLO QU'IL VOUS FAUT SELON VOTRE SITUATION...</strong></h5>
+			  <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s"  href="#magasin">Trouvez votre vélo ici </a>
+			  
+			</div>
+			<!--Grid column-->
+		  </div>
+		  <!--Grid row-->
+		</div>
+		<!-- Content -->
+	  </div>
+	  <!-- Mask & flexbox options-->
+	</div>
+	<!-- Full Page Intro -->
+  </header>
+  <!-- Main navigation -->
+
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">SCROLL DOWN</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Fabio Wibmer</h3>
+  <p>Fabio Wibmer a passé son enfance dans un véritable terrain de jeu. Ses parents lui ont offert LE cadeau parfait pour lui permettre de développer ses talents. Et aujourd’hui, quand il se filme en faisant son activité préférée, 80 millions de personnes admirent le spectacle sur YouTube... Chanceux le type. Facile...La vérité, c’est que Fabio Wibmer a beaucoup plus d’imagination que nous.« Les choses les plus banales autour de moi, je les regarde toujours sous un autre angle, explique-t-il. Je réfléchis aux idées sympa qu’il pourrait y avoir derrière. Puis je les mets en pratique.
+	  <br><br>
+	  « C’est en suivant ce principe que Fabio Wibmer s’est élevé, pour devenir un vététiste de niveau international et le YouTubeur le plus célèbre d’Autriche. Mais cette philosophie de vie, il l’applique aussi à des idées commerciales et des projets de vie d’un autre genre. Ainsi qu’à ses sorties VTT. « Pas besoin de budget ni de spots classieux pour faire marcher sa créativité. Parfois, on a même de meilleures idées quand les possibilités sont limitées. »
+	  <br><br>
+	  Fabio Wibmer a grandi dans un village de l’est du Tyrol. Pas exactement l’endroit rêvé pour devenir célèbre. « J’adore Oberpeischlach, dit-il, mais il n’y avait rien à faire là-bas. On n’avait même pas de terrain plat. Quand on jouait au foot, au bout de cinq minutes, on perdait le ballon et il fallait aller le récupérer en bas de la pente. » Fabio Wibmer a six ans quand il fait cet important constat : un pré peut être plus qu’un simple pré et un arbre abattu peut être plus qu’un simple arbre abattu.
+	  <br><br>
+	  Eh oui, car quand on pense de manière créative, un pré peut aussi être une piste de motocross et un arbre abattu peut devenir un obstacle de trial. Après une sortie en famille à la Coupe du monde de motocross en Carinthie, Fabio et son frère Gabriel supplient leurs parents de faire l’acquisition de mini motos cross. C’est ainsi que le champ de leur oncle passe du statut de mauvais terrain de foot à celui de parcours de motocross idoine. Et la forêt derrière la maison devient un véritable terrain de jeu offrant mille possibilités de défis et d’acrobaties.
+      <br><br>
+	</p>
+ 
+  <!--vedio -->
+  <div class="container-fluid mt-3 mb-5" >
+
+	<section style="background-image: url('img/img22.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;background-position-y: center;">
+	  
+	  <!-- Modal -->
+	  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/5oVAXOCwCWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="mask rgba-black-strong py-5">
+  
+		<div class="container text-center my-5">
+  
+		  <h3 class="font-weight-bold text-center white-text pb-2">Watch Video</h3>
+		  <hr class="w-header hr-light my-4">
+		  <p class="lead text-center white-text pt-2 mb-5">FABIO WIBMER</p>
+  
+		  <a id="play" class="btn-floating btn-cyan btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+  
+		</div>
+  
+	  </div>
+  
+	</section>
+  
+  </div>
+
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+	
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+   
+  </div>
+</div>
+
+	<!-- Section -->
+	<section>
+	  
+	
+        <!-- Modal -->
+          
+    
+ 
+  
+        <h3 class="font-weight-bold text-center dark-grey-text pb-2">Pro bike shop</h3>
+        <hr class="w-header my-4">
+        <p class="lead text-center text-muted pt-2 mb-5">You can find several product design by our professional team in
+          this section.</p>
+            
+        <!--First row-->
+        <div class="row">
+    
+          <!--First column-->
+          <div class="col-12">
+			<a id="magasin"></a>
+            <!-- Nav tabs -->
+            <ul class="nav md-pills flex-center flex-wrap mx-0" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active font-weight-bold text-uppercase" data-toggle="tab" href="#panel31" role="tab">Route</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel32" role="tab">VTT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel33" role="tab">Accéssoires</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!--First column-->
+    
+        </div>
+        <!--First row-->
+    
+        <!--Tab panels-->
+        <div class="tab-content mb-5">
+    
+          <!--Panel 1-->
+          <div class="tab-pane fade show in active" id="panel31" role="tabpanel">
+    
+            <!-- Grid row -->
+            <div class="row">
+    
+              <!-- Grid column -->
+              <div class="col-md-12 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" >
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img1.jpg" alt="Card image cap" style="height: 350px;">
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+                  
+                      <div>
+                      <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 1 099,00 DT</p>
+                      <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                    <form name="f" > 
+                      <select class="form-select" aria-label="Default select example" name="s">
+                          <option selected value="0">veuillez choisir</option>
+                          <option value="1">S</option>
+                          <option value="2">M</option>
+                          <option value="3">L</option>
+                          <option value="4">XL</option>
+                          <option value="5">XXL</option>
+                        </select><br>
+                        <div class="input-group mb-3">
+                            <div style="width: 100%; display: flex;
+                            justify-content: space-around;
+                            align-items: center;">
+                              <br>
+                              <input type="text" name="qte" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" onfocus="Calcul()" style="font-size: 10px;">
+                              <input type="text" name="res" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                              
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p1"></p>
+                          
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" onclick="verif()">Ajouter au Panier</button>
+                    </form>
+                  <script>
+                      function Calcul(){
+                        if(f.s.value=="0")
+                            f.res.disabled = true;
+                        else{
+                            f.res.disabled = false;
+                            f.res.value =  Number(f.qte.value) * 1099 + + "DT";    
+                        }
+                        
+                      }
+                    setInterval("Calcul()",100);
+                    function verif(){
+                        if(f.s.value=="0"){
+                            document.getElementById("p1").innerHTML = "Veuillez selectionner un Taille !";
+                        }
+
+                    }
+                  </script>
+                  
+                  
+                  </div>
+                  
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+                 
+  
+  
+          
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img2.jpg" alt="Card image cap" style="height: 350px;">
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 3 999,00  DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f1">
+                          <select class="form-select" aria-label="Default select example" name="s1">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte1" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul1()">
+                                <input type="text" name="res1" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p2"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="verif1()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                           function Calcul1(){
+                        if(f1.s1.value=="0")
+                            f1.res1.disabled = true;
+                        else{
+                            f1.res1.disabled = false;
+                            f1.res1.value =  Number(f1.qte1.value) * 3999 + "DT";    
+                        }
+                        
+                      }
+                    setInterval("Calcul1()",100);
+                    function verif1(){
+                        if(f1.s1.value=="0"){
+                            document.getElementById("p2").innerHTML = "Veuillez selectionner un Taille !";
+                        }
+                    }
+                    
+                        </script>
+                      
+                      
+                      </div>
+                      
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img3.jpg" alt="Card image cap" style="height: 350px;">
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 2 199,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f2">
+                          <select class="form-select" aria-label="Default select example" name="s2" > 
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte2" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul2()">
+                                <input type="text" name="res2" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p3"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="verif2()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                            function Calcul2(){
+                         if(f2.s2.value=="0")
+                             f2.res2.disabled = true;
+                         else{
+                             f2.res2.disabled = false;
+                             f2.res2.value =  Number(f2.qte2.value) * 2199 + "DT";    
+                         }
+                         
+                       }
+                     setInterval("Calcul2()",100);
+                     function verif2(){
+                         if(f2.s2.value=="0"){
+                             document.getElementById("p3").innerHTML = "Veuillez selectionner un Taille !";
+                         }
+                     }
+                     
+                         </script>
+                      
+                      
+                      </div>
+                      
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img4.jpg" alt="Card image cap" style="height: 350px;">
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé :
+                              8.299,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f3">
+                          <select class="form-select" aria-label="Default select example" name="s3">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte3" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul3()">
+                                <input type="text" name="res3" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p4"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="verif3()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                            function Calcul3(){
+                         if(f3.s3.value=="0")
+                             f3.res3.disabled = true;
+                         else{
+                             f3.res3.disabled = false;
+                             f3.res3.value =  Number(f3.qte3.value) * 8299 + "DT";    
+                         }
+                         
+                       }
+                     setInterval("Calcul3()",100);
+                     function verif3(){
+                         if(f3.s3.value=="0"){
+                             document.getElementById("p4").innerHTML = "Veuillez selectionner un Taille !";
+                         }
+                     }
+                     
+                         </script>
+                      
+                      
+                      
+                      </div>
+                      
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img5.jpg" alt="Card image cap" style="height: 350px;">
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 3 099,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f4">
+                          <select class="form-select" aria-label="Default select example" name="s4">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte4" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul4()">
+                                <input type="text" name="res4" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p5"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="verif4()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                            function Calcul4(){
+                         if(f4.s4.value=="0")
+                             f4.res4.disabled = true;
+                         else{
+                             f4.res4.disabled = false;
+                             f4.res4.value =  Number(f4.qte4.value) * 3099 + "DT";    
+                         }
+                         
+                       }
+                     setInterval("Calcul4()",100);
+                     function verif4(){
+                         if(f4.s4.value=="0"){
+                             document.getElementById("p5").innerHTML = "Veuillez selectionner un Taille !";
+                         }
+                     }
+                     
+                         </script>
+                      
+                      
+                      </div>
+                      
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img6.jpg" alt="Card image cap" style="height: 350px;"> 
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 2 088,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f5">
+                          <select class="form-select" aria-label="Default select example" name="s5">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                          
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte5" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul5()">
+                                <input type="text" name="res5" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p6"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="verif5()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                            function Calcul5(){
+                         if(f5.s5.value=="0")
+                             f5.res5.disabled = true;
+                         else{
+                             f5.res5.disabled = false;
+                             f5.res5.value =  Number(f5.qte5.value) * 2088 + "DT";    
+                         }
+                         
+                       }
+                     setInterval("Calcul5()",100);
+                     function verif5(){
+                         if(f5.s5.value=="0"){
+                             document.getElementById("p6").innerHTML = "Veuillez selectionner un Taille !";
+                         }
+                     }
+                     
+                         </script>
+                      
+                      
+                      </div>
+                      
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+            </div>
+            <!-- Grid row -->
+    
+          </div>
+          <!--Panel 1-->
+    
+          <!--Panel 2-->
+          <div class="tab-pane fade" id="panel32" role="tabpanel">
+    
+            <!-- Grid row -->
+            <div class="row">
+    
+              <!-- Grid column -->
+              <div class="col-md-12 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img6.jpg" alt="Card image cap" style="height: 350px;"> 
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 2 088,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f6">
+                          <select class="form-select" aria-label="Default select example" name="s6">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                          
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte6" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul6()">
+                                <input type="text" name="res6" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                        </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p7"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="Verif6()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                          function Calcul6(){
+                       if(f6.s6.value=="0")
+                           f6.res6.disabled = true;
+                       else{
+                           f6.res6.disabled = false;
+                           f6.res6.value =  Number(f6.qte6.value) * 2088 + "DT";    
+                       }
+                       
+                     }
+                   setInterval("Calcul6()",100);
+                   function verif6(){
+                       if(f6.s6.value=="0"){
+                           document.getElementById("p7").innerHTML = "Veuillez selectionner un Taille !";
+                       }
+                   }
+                   
+                       </script>
+                      
+                      
+                      
+                      </div>
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img7.jpg" alt="Card image cap" style="height: 350px;"> 
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 1 088,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f7">
+                          <select name="s7" class="form-select" aria-label="Default select example">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                          
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte7" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul7()">
+                                <input type="text" name="res7" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                        
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p8"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="Verif7()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                          function Calcul7(){
+                       if(f7.s7.value=="0")
+                           f7.res7.disabled = true;
+                       else{
+                           f7.res7.disabled = false;
+                           f7.res7.value =  Number(f7.qte7.value) * 1088 + "DT";    
+                       }
+                       
+                     }
+                   setInterval("Calcul7()",100);
+                   function verif7(){
+                       if(f7.s7.value=="0"){
+                           document.getElementById("p8").innerHTML = "Veuillez selectionner un Taille !";
+                       }
+                   }
+                   
+                       </script>
+                      
+                      
+                      </div>
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img8.jpg" alt="Card image cap" style="height: 350px;"> 
+    
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 3 077,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f8">
+                          <select name="s8" class="form-select" aria-label="Default select example">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                          
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte8" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul8()">
+                                <input type="text" name="res8" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                        
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p9"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="Verif8()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                          function Calcul8(){
+                       if(f8.s8.value=="0")
+                           f8.res8.disabled = true;
+                       else{
+                           f8.res8.disabled = false;
+                           f8.res8.value =  Number(f8.qte8.value) * 3077 + "DT";    
+                       }
+                       
+                     }
+                   setInterval("Calcul8()",100);
+                   function verif8(){
+                       if(f8.s8.value=="0"){
+                           document.getElementById("p9").innerHTML = "Veuillez selectionner un Taille !";
+                       }
+                   }
+                   
+                       </script>
+                      
+                      
+                      </div>
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+            </div>
+            <!-- Grid row -->
+    
+          </div>
+          <!--Panel 2-->
+    
+          <!--Panel 3-->
+          <div class="tab-pane fade" id="panel33" role="tabpanel">
+    
+            <!-- Grid row -->
+            <div class="row">
+    
+              <!-- Grid column -->
+              <div class="col-md-12 col-lg-4">
+    
+                <!-- Card -->
+                <div class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img10.jpg" alt="Card image cap" style="height: 350px;"> 
+    
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 1 608,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f9">
+                          <select name="s9" class="form-select" aria-label="Default select example">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                          
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte9" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul9()">
+                                <input type="text" name="res9" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                        
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p10"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="Verif9()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                          function Calcul9(){
+                       if(f9.s9.value=="0")
+                           f9.res9.disabled = true;
+                       else{
+                           f9.res9.disabled = false;
+                           f9.res9.value =  Number(f9.qte9.value) * 1608 + "DT";    
+                       }
+                       
+                     }
+                   setInterval("Calcul9()",100);
+                   function verif9(){
+                       if(f9.s9.value=="0"){
+                           document.getElementById("p10").innerHTML = "Veuillez selectionner un Taille !";
+                       }
+                   }
+                   
+                       </script>
+                      
+                      
+                      </div>
+    
+                  </div>
+    
+                </div>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img12.jpg" alt="Card image cap" style="height: 350px;"> 
+    
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                      <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 102,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f10">
+                          <select name="s10" class="form-select" aria-label="Default select example">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                          
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte10" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul10()">
+                                <input type="text" name="res10" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                        
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p11"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="Verif10()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                          function Calcul10(){
+                       if(f10.s10.value=="0")
+                           f10.res10.disabled = true;
+                       else{
+                           f10.res10.disabled = false;
+                           f10.res10.value =  Number(f10.qte10.value) * 102 + "DT";    
+                       }
+                       
+                     }
+                   setInterval("Calcul10()",100);
+                   function verif10(){
+                       if(f10.s10.value=="0"){
+                           document.getElementById("p11").innerHTML = "Veuillez selectionner un Taille !";
+                       }
+                   }
+                   
+                       </script>
+                      
+                      
+                      </div>
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-4">
+    
+                <!-- Card -->
+                <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+    
+                  <!-- Card image -->
+                  <img class="card-img-top" src="img/shop/img11.jpg" alt="Card image cap" style="height: 350px;"> 
+    
+    
+                  <!-- Card content -->
+                  <div class="card-body">
+    
+                        <div>
+                          <p style="font-weight: bold;color: black; border-bottom: rgb(0, 170, 255) solid 2px;">Prix conseillé : 35,00 DT</p>
+                          <Label style="background-color: rgb(68, 196, 68);">En Stock</Label>
+                        <form name="f11">
+                          <select name="s11" class="form-select" aria-label="Default select example">
+                              <option selected value="0">veuillez choisir</option>
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                              <option value="5">XXL</option>
+                            </select><br>
+                          
+                            <div class="input-group mb-3">
+                              <div style="width: 100%; display: flex;
+                              justify-content: space-around;
+                              align-items: center;">
+                                <br>
+                                <input type="text" name="qte11" class="form-control" placeholder="choisir la quantité" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;" onfocus="Calcul11()">
+                                <input type="text" name="res11" class="form-control" placeholder="resultat" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 10px;">
+                        
+                            </div>
+                            <p style="font-size: 12px;color:red;padding-top: 5px;" id="p12"></p>
+                            
+                          </div>
+                          <button type="button" class="btn btn-outline-primary" onclick="Verif11()">Ajouter au Panier</button>
+                        </form>
+                        <script>
+                          function Calcul11(){
+                       if(f11.s11.value=="0")
+                           f11.res11.disabled = true;
+                       else{
+                           f11.res11.disabled = false;
+                           f11.res11.value =  Number(f11.qte11.value) * 35 + "DT";    
+                       }
+                       
+                     }
+                   setInterval("Calcul11()",100);
+                   function verif11(){
+                       if(f11.s11.value=="0"){
+                           document.getElementById("p12").innerHTML = "Veuillez selectionner un Taille !";
+                       }
+                   }
+                   
+                       </script>
+                      
+                      
+                      </div>
+    
+                  </div>
+    
+                </a>
+                <!-- Card -->
+    
+              </div>
+              <!-- Grid column -->
+    
+            </div>
+            <!-- Grid row -->
+    
+          </div>
+          <!--Panel 3-->
+    
+        </div>
+        <!--Tab panels-->
+    
+      </section>
+      <!-- Section -->
+  </div>  
+
+</div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <div class="container mt-5">
+
+ 
+		<!--Section: Content-->
+		<section class="dark-grey-text mb-5">
+		  
+	<a id="contact"></a>
+		  <!-- Section heading -->
+		  <h3 class="font-weight-bold text-center mb-4">Contact Us</h3>
+		  <!-- Section description -->
+		
+		  <!-- Grid row -->
+		  <div class="row">
+	
+			<!-- Grid column -->
+			<div class="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
+	
+			  <!-- Form with header -->
+			  <div class="card">
+				<div class="card-body">
+				  <!-- Header -->
+				  <div class="form-header blue accent-1">
+					<h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+				  </div>
+				  <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+				  <!-- Body -->
+				  <div class="md-form">
+					<i class="fas fa-user prefix grey-text"></i>
+					<input type="text" id="form-name" class="form-control">
+					<label for="form-name">Your name</label>
+				  </div>
+				  <div class="md-form">
+					<i class="fas fa-envelope prefix grey-text"></i>
+					<input type="text" id="form-email" class="form-control">
+					<label for="form-email">Your email</label>
+				  </div>
+				  <div class="md-form">
+					<i class="fas fa-tag prefix grey-text"></i>
+					<input type="text" id="form-Subject" class="form-control">
+					<label for="form-Subject">Subject</label>
+				  </div>
+				  <div class="md-form">
+					<i class="fas fa-pencil-alt prefix grey-text"></i>
+					<textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+					<label for="form-text">Send message</label>
+				  </div>
+				  <div class="text-center">
+					<button class="btn btn-light-blue">Submit</button>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Form with header -->
+	
+			</div>
+			<!-- Grid column -->
+	
+			<!-- Grid column -->
+			<div class="col-lg-7">
+	
+			  <!--Google map-->
+			  <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+				<iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+				  style="border:0" allowfullscreen></iframe>
+			  </div>
+			  <!-- Buttons-->
+			  <div class="row text-center">
+				<div class="col-md-4">
+				  <a class="btn-floating blue accent-1">
+					<i class="fas fa-map-marker-alt"></i>
+				  </a>
+				  <p>New York, 94126</p>
+				  <p class="mb-md-0">United States</p>
+				</div>
+				<div class="col-md-4">
+				  <a class="btn-floating blue accent-1">
+					<i class="fas fa-phone"></i>
+				  </a>
+				  <p>+ 01 234 567 89</p>
+				  <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+				</div>
+				<div class="col-md-4">
+				  <a class="btn-floating blue accent-1">
+					<i class="fas fa-envelope"></i>
+				  </a>
+				  <p>info@gmail.com</p>
+				  <p class="mb-0">sale@gmail.com</p>
+				</div>
+			  </div>
+	
+			</div>
+			<!-- Grid column -->
+	
+		  </div>
+		  <!-- Grid row -->
+	
+		</section>
+		<!--Section: Content-->
+		<div class="container z-depth-1 my-5" style="background-color:teal;">
+
+			<section class="text-center py-5">
+		  
+			  <p class="mb-4 pb-2 lead font-weight-bold">Les marque</p>
+		  
+			  <!-- Logo carousel -->
+			  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1800">
+				<div class="carousel-inner">
+				  <!-- First slide -->
+				  <div class="carousel-item active">
+					<!--Grid row-->
+					<div class="row">
+		  
+					  <!--First column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img 1.png" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/First column-->
+		  
+					  <!--Second column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img2.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Second column-->
+		  
+					  <!--Third column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img3.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Third column-->
+		  
+					  <!--Fourth column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img4.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Fourth column-->
+		  
+					</div>
+					<!--/Grid row-->
+				  </div>
+				  <!-- First slide -->
+		  
+				  <!-- Second slide -->
+				  <div class="carousel-item">
+					<!--Grid row-->
+					<div class="row">
+		  
+					  <!--First column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img5.jpg" class="img-fluid px-4" alt="Logo " style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/First column-->
+		  
+					  <!--Second column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img6.png" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Second column-->
+		  
+					  <!--Third column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img7.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Third column-->
+		  
+					  <!--Fourth column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img8.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Fourth column-->
+		  
+					</div>
+					<!--/Grid row-->
+				  </div>
+				  <!-- Second slide -->
+		  
+				  <!-- Third slide -->
+				  <div class="carousel-item">
+					<!--Grid row-->
+					<div class="row">
+		  
+					  <!--First column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img9.png" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/First column-->
+		  
+					  <!--Second column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img10.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Second column-->
+		  
+					  <!--Third column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img11.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Third column-->
+		  
+					  <!--Fourth column-->
+					  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+						<img src="img/les marque/img12.jpg" class="img-fluid px-4" alt="Logo" style="width: 250px;height: 150px;">
+					  </div>
+					  <!--/Fourth column-->
+		  
+					</div>
+					<!--/Grid row-->
+				  </div>
+				  <!-- Third slide -->
+				</div>
+		  
+			  </div>
+			  <!-- Logo carousel -->
+			  
+			</section>
+		  
+			
+		  </div>
+	
+		  <div class="container mt-5 pt-5">
+  
+			<!--Section: Content-->
+			<section class="white-text">
+		  
+			  <!-- Grid row -->
+			  <div class="row">
+				
+				<div class="col-12">
+				  <div class="card z-depth-2">
+					<div class="card-body p-0">
+					  <div class="row mx-0">
+						<div class="col-lg-6 black rounded-left py-5 px-md-5">
+						  <h4 class="font-weight-bold ml-3 mb-4 pb-2">8 bonnes raisons de faire du vélo</h4>
+						  <ul class="fa-ul mb-0">
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Le vélo réduit le stress </li>
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>2. Le vélo diminue le risque de maladies cardiaques</li>
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>3. Le vélo fait baisser le risque de diabète de type 2</li>
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>4. Le vélo permet de perdre du poids </li>
+							<li><span class="fa-li"><i class="fas fa-check"></i></span>6. Le vélo, c'est bon pour la planète </li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 red accent-3 rounded-right py-5 px-md-5">
+										  <h4 class="font-weight-bold ml-3 mb-4 pb-2">Comment protéger son vélo contre le vol ?</h4>
+						  <ul class="fa-ul mb-0">
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Choisir un antivol efficace. ...</li>
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Choisir en complément des antivols de composant pour sécuriser les parties sensibles. ...0</li>
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Eviter l'usage d'antivol léger et les chaînes. ...</li>
+							<li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Faire marquer son vélo. ...</li>
+							<li><span class="fa-li"><i class="fas fa-check"></i></span>Accrocher son vélo systématiquement à un point fixe. ...</li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+			  </div>
+			  <!-- Grid row -->
+		  
+			</section>
+			<!--Section: Content-->
+		  
+		  
+		  </div>
+
+	  </div>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">COOL!</span>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+	<!-- Footer Links -->
+	<div class="container text-center text-md-left">
+  
+	  <!-- Grid row -->
+	  <div class="row">
+  
+		<!-- Grid column -->
+		<div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+  
+		  <!-- Content -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+		  <p>Here you can use rows and columns to organize your footer content.</p>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+			esse
+			quasi, veritatis totam voluptas nostrum.</p>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+		  <!-- Links -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+  
+		  <ul class="list-unstyled">
+			<li>
+			  <p>
+				<a href="#!">PROJECTS</a>
+			  </p>
+			</li>
+			<li>
+			  <p>
+				<a href="#!">ABOUT US</a>
+			  </p>
+			</li>
+			<li>
+			  <p>
+				<a href="#!">BLOG</a>
+			  </p>
+			</li>
+			<li>
+			  <p>
+				<a href="#!">AWARDS</a>
+			  </p>
+			</li>
+		  </ul>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+		  <!-- Contact details -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+  
+		  <ul class="list-unstyled">
+			<li>
+			  <p>
+				<i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+			</li>
+			<li>
+			  <p>
+				<i class="fas fa-envelope mr-3"></i> info@example.com</p>
+			</li>
+			<li>
+			  <p>
+				<i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+			</li>
+			<li>
+			  <p>
+				<i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+			</li>
+		  </ul>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+  
+		  <!-- Social buttons -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+  
+		  <!-- Facebook -->
+		  <a type="button" class="btn-floating btn-fb">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <!-- Twitter -->
+		  <a type="button" class="btn-floating btn-tw">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <!-- Google +-->
+		  <a type="button" class="btn-floating btn-gplus">
+			<i class="fab fa-google-plus-g"></i>
+		  </a>
+		  <!-- Dribbble -->
+		  <a type="button" class="btn-floating btn-dribbble">
+			<i class="fab fa-dribbble"></i>
+		  </a>
+  
+		</div>
+		<!-- Grid column -->
+  
+	  </div>
+	  <!-- Grid row -->
+  
+	</div>
+	<!-- Footer Links -->
+  
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+	</div>
+	<!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+<script>
+	
+	var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+
+</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+  </script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+  </script>
+</body>
+</html>

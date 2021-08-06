@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creation</title>
+
+
+    
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+		<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<style>
+     body{
+    background-image: url("img/img15.jpg") ; 
+  }
+ 
+        html,
+body,
+.intro {
+  height: 100%;
+}
+
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+#text-center{
+  margin: auto;
+  border-bottom:  rgb(64, 163, 167) solid 2px;
+  width: 60%;
+}
+.form-control{
+
+ box-shadow: black 2px 1px 1px;
+  width: 80%;
+  border-bottom: rgb(64, 163, 167)  solid 2px;
+  border-radius: 8px;
+padding-left: 10px;
+}
+#button{
+  width: 40%;
+}
+
+
+.form-label{
+  border-bottom: rgb(64, 163, 167)  solid 2px;
+}
+.error_form
+{
+	top: 12px;
+  font-weight: bold;
+	color: rgb(216, 15, 15);
+    font-size: 10px;
+    font-family: Helvetica;
+   
+}
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    
+
+<script>
+  
+</script>
+</head>
+<body>
+    
+  
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+          <div class="container">
+            <img src="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+              aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html" style="border-bottom: solid 2px rgb(37, 153, 203);">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" >&nbspMagasin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="l'histoire du velo.html" >&nbspHistorique Vélo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" >&nbspContact</a>
+                  </li>
+                </ul>
+             
+            </div>
+            <button type="button" class="btn btn-outline-info" style="width: 100px; height: 40px;padding:9px ;">    <p id="demo" style="color: rgb(255, 255, 255);"></p></button>
+          </div>
+        </nav></header>
+
+
+<div style="width: 50%;margin: auto; margin-top: 100px;">
+    <section class="intro">
+     
+          <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                  <div class="card" style="border-radius: 1rem;">
+                    <div class="card-body p-5">
+      
+                      <h1 class="mb-5 text-center" id="text-center">Checkout Form</h1>
+      
+                      <form style="width: 100%;"  id="registration_form">
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                       
+                       <div>
+                          <div class="form-outline mb-4">
+                            <div >   <label class="form-label" for="form6Example3">Prenom</label> 
+                                <input type="text" class="form-control" id="form_fprenom" />
+                                <span class="error_form" id="fprenom_error_message"></span>
+                            </div>
+                       
+                           
+                          
+                      </div>
+                      
+
+                        <div>
+                        
+                          <div class="form-outline mb-4">
+                            <div >
+                              <label class="form-label" for="form6Example3">Nom</label>
+                               <input type="text" class="form-control" id="form_fnom" /> 
+                               <span class="error_form" id="fnom_error_message"></span>
+                            </div>
+                      
+                           
+                          
+                      </div>
+                   
+      
+
+                      <div>
+                        
+                          <div class="form-outline mb-4">
+                            <div>    
+                              <label class="form-label" for="form6Example3">numéro de telephone</label>
+                               <input type="text" class="form-control" id="form_ftel" />
+                               <span class="error_form" id="ftel_error_message"></span>
+                            </div>
+                      
+                           
+                          
+                      </div>
+
+
+                      <div>
+                        
+                          <div class="form-outline mb-4">
+                            <div >   
+                              <label class="form-label" for="form6Example3">Email</label>
+                              <input class="form-control" type="email" id="form_email" name="" required="">
+                              <span class="error_form" id="email_error_message"></span>
+                            </div>
+                        
+                     
+                          
+                      </div>
+
+
+      
+                       <div>
+                        
+                          <div class="form-outline mb-4">
+                            <div>  
+                              <label class="form-label" for="form6Example3">Adresse</label>
+                               <input type="text" class="form-control" id="form-fadresse" />
+                               <span class="error_form" id="fadresse_error_message"></span>  
+                            </div>
+                        
+                           
+                          
+                      </div>
+
+                      
+      
+                      <div>
+                        
+                        <div class="form-outline mb-4">
+                          <div > 
+                             <label class="form-label" for="form6Example3">code postal</label>
+                             <input type="text" class="form-control" id="form-codepostale" /> 
+                             <span class="error_form" id="fcodepostale_error_message"></span>  
+                          </div>
+                       
+                         
+                        
+                    </div>
+
+                   
+
+                    
+                          
+                    <div>
+                        
+                      <div class="form-outline mb-4">
+                        <div> 
+                           <label class="form-label" for="form6Example3">Ville</label>
+                           <input type="text" class="form-control" id="form-ville" /> 
+                           <span class="error_form" id="fville_error_message"></span>  
+                        </div>
+                    
+                       
+                      
+                  </div>
+
+
+                  <div>
+                        
+                    <div class="form-outline mb-4">
+                      <div >
+                         <label class="form-label" for="form6Example3">mots de passe </label>
+                         <input type="password" class="form-control" id="form_motsdepasse" name="" required="">
+                         <span class="error_form" id="motsdepasse_error_message"></span>
+                      </div>
+                   
+                     
+                    
+                </div>
+
+
+                <div>
+                      
+                  <div class="form-outline mb-4">
+                    <div>     
+                       <label class="form-label" for="form6Example3">confirmer le mots de passe </label>
+                       <input type="password" id="form_retype_password" class="form-control" name="" required="">
+			                	<span class="error_form" id="retype_password_error_message"></span>
+                    </div>
+            
+                   
+                  
+              </div>
+
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                          <label class="form-label" for="form6Example7">Additional information</label>
+                        </div>
+      
+                       </div>
+                       
+                      
+
+      
+                        <!-- Submit button -->
+                        <div style=" display: flex;
+         justify-content: space-around;
+         align-items: center;width: 80%;margin: auto;">
+                          <button type="submit" class="btn btn-secondary btn-rounded btn-block" id="button">Valider </button>
+                          <br><br>
+                        </div>
+                       <center> <button type="button" class="btn btn-outline-primary" style="width: 80%;padding:9px  ;font-size: 10px;"  onclick="window.print()">Imprimer</button></center> 
+                       <center> <button type="button" class="btn btn-outline-primary" style="width: 80%;padding:9px  ;font-size: 10px;"  onclick="verif()">Verifier le contenu de la formulaire</button></center> 
+                      </form>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </section>
+
+
+
+</div>
+  
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4" style="margin-top: 50px;">
+
+	<!-- Footer Links -->
+	<div class="container text-center text-md-left">
+  
+	  <!-- Grid row -->
+	  <div class="row">
+  
+		<!-- Grid column -->
+		<div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+  
+		  <!-- Content -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+		  <p>Here you can use rows and columns to organize your footer content.</p>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+			esse
+			quasi, veritatis totam voluptas nostrum.</p>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+		  <!-- Links -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+  
+		  <ul class="list-unstyled">
+			<li>
+			  <p>
+				<a href="#!">PROJECTS</a>
+			  </p>
+			</li>
+			<li>
+			  <p>
+				<a href="#!">ABOUT US</a>
+			  </p>
+			</li>
+			<li>
+			  <p>
+				<a href="#!">BLOG</a>
+			  </p>
+			</li>
+			<li>
+			  <p>
+				<a href="#!">AWARDS</a>
+			  </p>
+			</li>
+		  </ul>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+		  <!-- Contact details -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+  
+		  <ul class="list-unstyled">
+			<li>
+			  <p>
+				<i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+			</li>
+			<li>
+			  <p>
+				<i class="fas fa-envelope mr-3"></i> info@example.com</p>
+			</li>
+			<li>
+			  <p>
+				<i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+			</li>
+			<li>
+			  <p>
+				<i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+			</li>
+		  </ul>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="clearfix w-100 d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+  
+		  <!-- Social buttons -->
+		  <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+  
+		  <!-- Facebook -->
+		  <a type="button" class="btn-floating btn-fb">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <!-- Twitter -->
+		  <a type="button" class="btn-floating btn-tw">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <!-- Google +-->
+		  <a type="button" class="btn-floating btn-gplus">
+			<i class="fab fa-google-plus-g"></i>
+		  </a>
+		  <!-- Dribbble -->
+		  <a type="button" class="btn-floating btn-dribbble">
+			<i class="fab fa-dribbble"></i>
+		  </a>
+  
+		</div>
+		<!-- Grid column -->
+  
+	  </div>
+	  <!-- Grid row -->
+  
+	</div>
+	<!-- Footer Links -->
+  
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+	</div>
+	<!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+  <script type="text/javascript">
+    $(function() {
+
+$("#fprenom_error_message").hide();
+$("#fnom_error_message").hide();
+$("#ftel_error_message").hide();
+$("#email_error_message").hide();
+$("#fadresse_error_message").hide();
+$("#motsdepasse_error_message").hide();
+$("#retype_password_error_message").hide();
+
+var error_fprenom = false;
+var error_fnom = false;
+var error_ftel = false;
+var error_email = false;
+var error_fadresse = false;
+var error_motsdepasse = false;
+var error_retype_password = false;
+
+
+$("#form_fprenom").focusout(function(){
+   check_fprenom();
+});
+$("#form_fnom").focusout(function(){
+   check_fnom();
+});
+$("#form_ftel").focusout(function(){
+   check_ftel();
+});
+
+$("#form_email").focusout(function() {
+            check_email();
+         });
+ $("#form_adresse").focusout(function(){
+   check_fadresse();
+});
+$("#form_motsdepasse").focusout(function() {
+            check_motsdepasse();
+         });
+ $("#form_retype_password").focusout(function() {
+            check_retype_password();
+         });
+
+function check_fprenom() {
+   var pattern = /^[a-zA-Z]*$/;
+   var fprenom = $("#form_fprenom").val();
+   if (pattern.test(fprenom) && fprenom !== '') {
+      $("#fprenom_error_message").hide();
+      $("#form_fprenom").css("border","2px solid #34F458");
+   } else {
+      $("#fprenom_error_message").html("Le prenom invalide, le prenom comporte des caractére");
+      $("#fprenom_error_message").show();
+      $("#form_fprenom").css("border","2px solid #F90A0A");
+      error_fprenom = true;
+   }
+}
+
+function check_fnom() {
+   var pattern = /^[a-zA-Z]*$/;
+   var fnom = $("#form_fnom").val();
+   if (pattern.test(fnom) && fnom !== '') {
+      $("#fnom_error_message").hide();
+      $("#form_fnom").css("border","2px solid #34F458");
+   } else {
+      $("#fnom_error_message").html("le nom invalide , le nom comporte des caractére");
+      $("#fnom_error_message").show();
+      $("#form_fnom").css("border","2px solid #F90A0A");
+      error_fprenom = true;
+   }
+}
+
+function check_ftel() {
+   var pattern = /^[1-9]*$/;
+   var ftel = $("#form_ftel").val();
+   if (pattern.test(ftel) && ftel !== '') {
+      $("#ftel_error_message").hide();
+      $("#form_ftel").css("border","2px solid #34F458");
+   } else {
+      $("#ftel_error_message").html("le numero de telephone invalide ,le numero de telephone comporte des chiffre");
+      $("#ftel_error_message").show();
+      $("#form_ftel").css("border","2px solid #F90A0A");
+      error_ftel = true;
+   }
+}
+
+         function check_email() {
+            var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var email = $("#form_email").val();
+            if (pattern.test(email) && email !== '') {
+               $("#email_error_message").hide();
+               $("#form_email").css("border","2px solid #34F458");
+            } else {
+               $("#email_error_message").html("Email invalide ,le format de email doit étre correcte");
+               $("#email_error_message").show();
+               $("#form_email").css("border","2px solid #F90A0A");
+               error_email = true;
+            }
+         }
+
+         function check_adresse() {
+   var pattern = /^[a-zA-Z]*$/;
+   var fadresse = $("#form_fadresse").val();
+   if (pattern.test(fadresse) && fadresse !== '') {
+      $("#fadresse_error_message").hide();
+      $("#form_fadresse").css("border","2px solid #34F458");
+   } else {
+      $("#fadresse_error_message").html("Should contain only Characters");
+      $("#fadresse_error_message").show();
+      $("#form_fadresse").css("border","2px solid #F90A0A");
+      error_fadresse = true;
+   }
+}
+
+         function check_motsdepasse() {
+            var motsdepasse_length = $("#form_motsdepasse").val().length;
+            if (motsdepasse_length < 8) {
+               $("#motsdepasse_error_message").html("le mots de passe invalide ,la longeur de la mots de passe <=0");
+               $("#motsdepasse_error_message").show();
+               $("#form_motsdepasse").css("border","2px solid #F90A0A");
+               error_password = true;
+            } else {
+               $("#motsdepasse_error_message").hide();
+               $("#form_motsdepasse").css("border","2px solid #34F458");
+            }
+         }
+
+         function check_retype_password() {
+            var password = $("#form_motsdepasse").val();
+            var retype_password = $("#form_retype_password").val();
+            if (password !== retype_password) {
+               $("#retype_password_error_message").html("le confiramtion de mots de passe doit étre correct");
+               $("#retype_password_error_message").show();
+               $("#form_retype_password").css("border","2px solid #F90A0A");
+               error_retype_password = true;
+            } else {
+               $("#retype_password_error_message").hide();
+               $("#form_retype_password").css("border","2px solid #34F458");
+            }
+         }
+
+$("#registration_form").submit(function() {
+   error_fprenom = false;
+   error_fnom = false;
+   error_ftel = false;
+   error_email = false;
+   error_fadresse = false;
+   error_motsdepasse = false;
+   error_retype_password = false;
+
+   check_fprenom();
+   check_fnom();
+   check_ftel();
+   check_email();
+   check_adresse();
+   check_motsdepasse();
+   check_retype_password();
+
+   if ((error_fprenom === false) &&(error_fnom === false)&&(error_ftel === false)&&(error_email === false)&&(error_motsdepasse === false)&&( error_retype_password === false)&&(( error_retype_fadresse === false))){
+      alert("Registration Successfull");
+      return true;
+   } else {
+      alert("Please Fill the form Correctly");
+      return false;
+   }
+
+
+});
+});
+
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+
+function verif(){
+  prenom =document.getElementById("form_fprenom").value;
+  nom =document.getElementById("form_fnom").value;
+  tel =document.getElementById("form_ftel").value;
+  email =document.getElementById("form_email").value;
+  adresse =document.getElementById("form-fadresse").value;
+  //codepostale =document.getElementById("form-codepostale").value;
+ // ville =document.getElementById("form_ville").value;
+  motsdepasse =document.getElementById("form_motsdepasse").value;
+  document.open();
+
+document.write(
+ "<div style='background-color:rgb(64, 163, 167);border-botton:solid 2px black; color:black;'>" 
++"le prénom :"+prenom+"<br>"
++"nom :"+nom+"<br>"
++"tel :"+tel+"<br>"
++"email :"+email+"<br>"
++"Adresse :"+adresse+"<br>"
+//+"Code postale :"+codepostale+"<br>"
+//+"Ville :"+ville+"<br>"
++"Mots de passe :"+motsdepasse+"<br>"
+);
+
+
+document.close();
+}
+
+
+
+
+     </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+</body>
+</html>
